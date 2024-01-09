@@ -9,6 +9,7 @@ contract EventLog{
     event Log(address indexed sender,string message);
     // Why are not using  memory beacuse we dont need persmission EVM for some memory 
     // Here we are directly logging or putting data on the blockchain
+    // we can evaluate condition of 3 parameters to filter out
     event Event2();
 
     //trigger the evenr
