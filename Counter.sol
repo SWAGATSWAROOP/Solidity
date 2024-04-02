@@ -3,25 +3,18 @@
 pragma solidity ^0.8.3;
 
 contract Counter{
-    uint count; //uint by default is 256bits
-    // uint8 uint16 till- uint256
+    uint count; // state variable
 
-    //int8, -- int256 --> default int
-
-    //Address addr = for the address like your public key and private key directly put type of hexdecimal
-    //bool default value is false
-    //fixed
-    //struct
-    //string
-    //enums
-    //byte Array
-
-
+    //Doesn't need transaction
+    function add() public pure returns (uint){
+        return 2+3;
+    }
 
     function get() public view returns (uint){
         return count;
     }
 
+    //Transaction Function
     function inc() public {
         count++;
     }
